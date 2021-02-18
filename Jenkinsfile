@@ -8,8 +8,8 @@ pipeline {
             steps {
                 echo 'Preparing report...'
                 withSonarQubeEnv('SonarServer') {
-		  
-                    sh "gradle sonarqube"
+		    sh "chmod +x gradlew"
+                    sh "./gradlew sonarqube"
                 }
             }
         }
