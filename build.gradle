@@ -20,7 +20,7 @@ dependencies {
 
 sonarqube {
   properties {
-    property 'sonar.projectName', projectName
+    property 'sonar.projectName', 'SonarQubeGradleDemo'
   }
 }
 test {
