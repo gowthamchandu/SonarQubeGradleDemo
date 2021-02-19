@@ -17,16 +17,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
-gradlePlugin {
-  plugins {
-    sonarqubePlugin {
-      displayName = projectName
-      description = project.description
-      id = 'org.sonarqube'
-      implementationClass = 'org.sonarqube.gradle.SonarQubePlugin'
-    }
-  }
-}
+
 sonarqube {
   properties {
     property 'sonar.projectName', projectName
