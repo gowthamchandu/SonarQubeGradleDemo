@@ -9,7 +9,6 @@ pipeline {
                 echo 'Preparing report...'
                 withSonarQubeEnv('SonarServer') {
 		    sh "chmod +x gradlew"
-		    sh "chmod 755 gradlew"
                     sh "./gradlew sonarqube"
                 }
             }
